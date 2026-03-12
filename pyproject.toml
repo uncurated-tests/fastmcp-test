@@ -1,0 +1,26 @@
+[project]
+name = "openmeteo-mcp"
+version = "0.1.0"
+description = "FastMCP server that wraps the Open-Meteo public API"
+readme = "README.md"
+authors = [
+    { name = "grappeggia", email = "marcosgrappeggia@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp==3.1.0",
+    "httpx==0.28.1",
+    "pydantic==2.12.5",
+]
+
+[project.scripts]
+openmeteo-mcp = "openmeteo_mcp:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest==9.0.2",
+]
