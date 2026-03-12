@@ -45,6 +45,11 @@ curl http://127.0.0.1:8000/health
 uv run pytest
 ```
 
+## Deploy
+
+- `app.py` exports the ASGI app that Vercel expects for Python deployments.
+- The MCP endpoint stays at `/mcp` and the health check stays at `/health`.
+
 ## Example client call
 
 ```bash
