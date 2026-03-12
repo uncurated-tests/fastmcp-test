@@ -30,7 +30,7 @@ uv run openmeteo-mcp
 HTTP transport:
 
 ```bash
-uv run fastmcp run src/openmeteo_mcp/server.py:mcp --transport http --port 8000
+uv run fastmcp run openmeteo_mcp/server.py:mcp --transport http --port 8000
 ```
 
 Health check:
